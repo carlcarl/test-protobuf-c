@@ -37,16 +37,13 @@ struct  _SearchRequest
 {
   ProtobufCMessage base;
   char *query;
-  protobuf_c_boolean has_page_number;
   int32_t page_number;
-  protobuf_c_boolean has_result_per_page;
   int32_t result_per_page;
-  protobuf_c_boolean has_corpus;
   SearchRequest__Corpus corpus;
 };
 #define SEARCH_REQUEST__INIT \
  { PROTOBUF_C_MESSAGE_INIT (&search_request__descriptor) \
-    , NULL, 0,0, 0,0, 0,SEARCH_REQUEST__CORPUS__UNIVERSAL }
+    , NULL, 0, 0, SEARCH_REQUEST__CORPUS__UNIVERSAL }
 
 
 /* SearchRequest methods */

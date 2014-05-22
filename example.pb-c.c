@@ -94,7 +94,7 @@ static const ProtobufCFieldDescriptor search_request__field_descriptors[4] =
   {
     "query",
     1,
-    PROTOBUF_C_LABEL_OPTIONAL,
+    PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_STRING,
     0,   /* quantifier_offset */
     PROTOBUF_C_OFFSETOF(SearchRequest, query),
@@ -106,9 +106,9 @@ static const ProtobufCFieldDescriptor search_request__field_descriptors[4] =
   {
     "page_number",
     2,
-    PROTOBUF_C_LABEL_OPTIONAL,
+    PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(SearchRequest, has_page_number),
+    0,   /* quantifier_offset */
     PROTOBUF_C_OFFSETOF(SearchRequest, page_number),
     NULL,
     NULL,
@@ -118,9 +118,9 @@ static const ProtobufCFieldDescriptor search_request__field_descriptors[4] =
   {
     "result_per_page",
     3,
-    PROTOBUF_C_LABEL_OPTIONAL,
+    PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_INT32,
-    PROTOBUF_C_OFFSETOF(SearchRequest, has_result_per_page),
+    0,   /* quantifier_offset */
     PROTOBUF_C_OFFSETOF(SearchRequest, result_per_page),
     NULL,
     NULL,
@@ -130,9 +130,9 @@ static const ProtobufCFieldDescriptor search_request__field_descriptors[4] =
   {
     "corpus",
     4,
-    PROTOBUF_C_LABEL_OPTIONAL,
+    PROTOBUF_C_LABEL_REQUIRED,
     PROTOBUF_C_TYPE_ENUM,
-    PROTOBUF_C_OFFSETOF(SearchRequest, has_corpus),
+    0,   /* quantifier_offset */
     PROTOBUF_C_OFFSETOF(SearchRequest, corpus),
     &search_request__corpus__descriptor,
     &search_request__corpus__default_value,
