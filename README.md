@@ -11,6 +11,7 @@ protobuf-c example
 	./configure
 	make
 	sudo make install
+	sudo ldconfig -v
 
 	cd ..
 	wget https://github.com/protobuf-c/protobuf-c/releases/download/v1.0.0-rc1/protobuf-c-1.0.0-rc1.tar.gz
